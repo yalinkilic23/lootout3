@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.3rem 0rem;
+}
+.right-side {
+  display: flex;
+  align-items: center;
+}
+.right-side nav {
+  list-style: none;
+  display: flex;
+  color: #fff;
+  align-items: center;
+  margin-right: 1rem;
+}
+.right-side nav * + * {
+  margin-left: 1.4rem;
+}
+.right-side .search-header-icon {
+  margin: 0rem 1.5rem;
+}
+.right-side button {
+  width: 120px;
+  height: 41px;
+  outline: none;
+  border: none;
+  border-radius: 999px;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  cursor: pointer;
+}
