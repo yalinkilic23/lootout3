@@ -48,49 +48,4 @@
   .burger-header-icon {
     display: block;
   }
-  .home-hero {
-    flex-direction: column;
-    align-items: center;
-    margin: 3rem 0rem;
-  }
-  .home-hero > * {
-    width: 100%;
-  }
-  .home-hero .left {
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 3rem;
-  }
-  .home-hero .left > p {
-    margin-bottom: 2rem !important;
-  }
-  .home-hero .left .button-wrapper {
-    margin-top: 2rem !important;
-  }
-  .home-hero .left form {
-    width: 100% !important;
-  }
-
-  .home .popular-brands-img {
-    display: none;
-  }
-  .home .mobile-mode-display {
-    display: grid !important;
-  }
-  .Services .big-service-circle {
-    display: none !important;
-  }
-  .service-body-info > img,
-  .service-body-info > .service-body-info-left-side {
-    display: none;
-  }
-  .Services .service-body-cards-container {
-    position: static !important;
-  }
-  .Services .service-body-info-cards {
-    position: static !important;
-    grid-template-columns: 1fr 1fr !important;
-    grid-row-gap: 3rem !important;
-  }
 }
