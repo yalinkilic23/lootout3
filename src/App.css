@@ -12,7 +12,7 @@ body {
 
 .AppFrontWrapper {
   width: 100%;
-  background: rgba(25, 25, 25, 0.5);
+  background: rgba(0, 0, 0, 0.8);
   content: "";
   position: absolute;
   left: 0;

@@ -7,34 +7,53 @@
   display: flex;
   align-items: center;
 }
+.Login {
+  background: #002a3f;
+  padding: 2rem;
+  width: 401px;
+}
+.Login form {
+  margin-top: 2rem;
+}
+.login-back-btn {
+  cursor: pointer;
+}
 .SignIn > * {
   flex: 1;
 }
 .SignIn > img {
   width: 100%;
 }
-.SignIn .SignInForm {
+.SignIn .SignInForm,
+.Login form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.SignIn .SignInForm > h3 {
+.SignIn .SignInForm > h3,
+.Login form > h3 {
   color: #fff;
   margin-bottom: 0.5rem;
 }
 .SignIn .SignInForm .input-wrapper {
   width: 80%;
 }
-.SignIn .SignInForm .input-wrapper {
+.Login form > .input-wrapper {
+  width: 85%;
+}
+.SignIn .SignInForm .input-wrapper,
+.Login form > .input-wrapper {
   margin-bottom: 1rem;
   color: #fff;
   font-family: "Poppins", sans-serif;
 }
-.SignIn .SignInForm .input-wrapper label {
+.SignIn .SignInForm .input-wrapper label,
+.Login form > .input-wrapper label {
   font-weight: 400;
   font-size: 12px;
 }
-.SignIn .SignInForm .input-wrapper input {
+.SignIn .SignInForm .input-wrapper input,
+.Login form > .input-wrapper input {
   display: block;
   width: 93%;
   font-size: 12px;
@@ -48,6 +67,9 @@
   padding: 0rem 1rem;
   height: 45px;
 }
+.Login form > .input-wrapper input {
+  width: 100%;
+}
 .checkbox-wrapper {
   display: flex;
   align-items: center;
@@ -59,6 +81,7 @@
   font-size: 14px;
   margin-left: 5px;
 }
+.popup-sign-up-button,
 .popup-sign-in-button {
   background: linear-gradient(178.18deg, #7af0d1 110.5%, #281ac8 158.3%);
   height: 40px;
@@ -69,4 +92,97 @@
   outline: none;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
+}
+.sign-in-logo {
+  margin-top: 4rem;
+}
+
+/* search */
+.search {
+  width: 70%;
+}
+.search form {
+  width: 100%;
+}
+.search form .input-container label {
+  display: block;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.4000000059604645px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.search form .input-container .input-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  height: 50px;
+  background: #adadad26;
+  border: 1px solid #f0f0f0;
+  padding: 0rem 1rem;
+  border-radius: 999px;
+}
+.search form .input-container .input-wrapper input {
+  flex: 1;
+  margin-right: 10px;
+  font-family: "Poppins", sans-serif;
+  height: 90%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+}
+.results {
+  margin-top: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+.result-box {
+  display: flex;
+
+  align-items: center;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 1rem;
+}
+.result-box img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.result-box .result-presentation {
+  flex: 1;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.result-presentation .left .product-title {
+  font-size: 20px;
+
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.09em;
+}
+.result-presentation .left .product-information {
+  font-size: 12px;
+  color: #adadad;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.09em;
+}
+.result-presentation .left .product-information span {
+  color: #7af0d1;
+}
+.result-presentation .right .product-price {
+  font-size: 26px;
+
+  font-weight: 900;
+  line-height: 35px;
+  letter-spacing: 0em;
 }

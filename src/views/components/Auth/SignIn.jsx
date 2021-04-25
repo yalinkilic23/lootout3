@@ -25,7 +25,7 @@ function SignIn() {
                 </div>
 
 
-                <input type="submit" value="Sign Up" className="popup-sign-in-button"/>
+                <input type="submit" value="Sign Up" className="popup-sign-up-button"/>
             </form>
         </div>
     )

@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from '../assets/img/logo.png'
 import SearchIcon from '../assets/svg/search-icon.svg'
+import BurgerIcon from '../assets/svg/BurgerIcon.svg'
 import '../assets/css/header.css'
 function Header() {
     
@@ -18,12 +19,15 @@ function Header() {
                     <li>
                         About Us
                     </li>
-                    <li>
-                        Customer Care
+                    <li className="login-option">
+                    Sıgn In
                     </li>
                 </nav>
 
                 <img src={SearchIcon} alt="Search Icon" className="search-header-icon"/>
+                <img src={BurgerIcon} alt="burger Icon" className="burger-header-icon"/>
+
+
 
                 <button className="sign-in-button">Sign Up</button>
             </div>

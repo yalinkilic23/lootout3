@@ -2,8 +2,10 @@
   width: 95%;
   margin: auto;
 }
-.home-sign-in-wrapper {
-  height: 100vh;
+.home-sign-in-wrapper,
+.home-login-wrapper,
+.home-search-wrapper {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,11 +15,13 @@
   top: 0;
   display: none;
 }
-
+.home-search-wrapper {
+  padding-top: 8rem;
+  align-items: flex-start;
+}
 .home-hero {
   display: flex;
   align-items: center;
-  /* background: chartreuse; */
   min-height: 80vh;
   background: url(../img/home-triangle-bg.png);
   background-position: center;
@@ -107,6 +111,33 @@
   width: 30px;
   cursor: pointer;
 }
+.home .mobile-mode-display {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  display: none;
+}
+.home .mobile-mode-display .image-wrapper {
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+
+  padding: 1rem 0rem;
+  justify-content: center;
+}
+.home .mobile-mode-display .image-wrapper img {
+  width: 70%;
+  object-fit: cover;
+}
+.home .mobile-mode-display p {
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+}
 .home .popular-presentation,
 .home .most-recent-item-presentation,
 .home .brand-presentation {
@@ -144,7 +175,8 @@
   margin-bottom: 6rem;
 }
 .most-recent-item-container,
-.brand-item-container {
+.brand-item-container,
+.sneaker-news-container {
   overflow-x: hidden;
   margin: 4rem 0rem;
 }
@@ -174,7 +206,7 @@
   /* transform: translateX(-230px); */
 }
 .home .MostRecentItem {
-  width: 300px;
+  min-width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;

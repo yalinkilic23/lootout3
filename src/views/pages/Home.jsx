@@ -25,6 +25,8 @@ import Footer from '../../shared/Footer'
 import {HandleSigninPopUp} from '../../assets/js/Events/PopUp'
 import SignIn from '../components/Auth/SignIn'
 import Services from '../components/home/Services'
+import Login from '../components/Auth/Login'
+import Search from '../../shared/Search'
 function Home() {
 
     useEffect(() => {
@@ -34,6 +36,13 @@ function Home() {
         <div className="home">
             <div className="home-sign-in-wrapper">
                 <SignIn/>
+            </div>
+            <div className="home-login-wrapper">
+                <Login/>
+            </div>
+
+            <div className="home-search-wrapper">
+                <Search/>
             </div>
             <Header/>
             <div className="home-hero">
