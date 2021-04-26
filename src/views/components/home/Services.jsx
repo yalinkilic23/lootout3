@@ -14,7 +14,7 @@ import ServiceShipping from '../../../assets/svg/ServiceShipping.svg'
 function Services() {
     return (
         <div className="Services">
-            <img src={BigServiceCircle} alt="" className="big-service-circle"/>
+            
             <img src={BigServiceCircle} alt="" className="left-big-service-circle"/>
             <div className="services-top">
                 <img src={ServicesLogo} alt=""/>

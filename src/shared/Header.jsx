@@ -25,7 +25,9 @@ function Header() {
                 </nav>
 
                 <img src={SearchIcon} alt="Search Icon" className="search-header-icon"/>
-                <img src={BurgerIcon} alt="burger Icon" className="burger-header-icon"/>
+                <img src={BurgerIcon} alt="burger Icon" className="burger-header-icon" onClick={e=>{
+                    document.querySelector(".Sidebar").classList.add("active")
+                }}/>
 
 
 

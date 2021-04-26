@@ -27,6 +27,7 @@ import SignIn from '../components/Auth/SignIn'
 import Services from '../components/home/Services'
 import Login from '../components/Auth/Login'
 import Search from '../../shared/Search'
+import Sidebar from '../../shared/Sidebar'
 function Home() {
 
     useEffect(() => {
@@ -34,6 +35,8 @@ function Home() {
     }, [])
     return (
         <div className="home">
+
+            <Sidebar/>
             <div className="home-sign-in-wrapper">
                 <SignIn/>
             </div>

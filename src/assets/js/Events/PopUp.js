@@ -1,9 +1,9 @@
 export const HandleSigninPopUp = () => {
-  let SignInButton = document.querySelector(".sign-in-button");
+  let SignInButtons = document.querySelectorAll(".sign-in-button");
   let App = document.querySelector(".App");
   let AppFrontWrapper = document.querySelector(".AppFrontWrapper");
   let HomeSignInWrapper = document.querySelector(".home-sign-in-wrapper");
-  let LoginOption = document.querySelector(".login-option");
+  let LoginOptions = document.querySelectorAll(".login-option");
   let HomeLogInWrapper = document.querySelector(".home-login-wrapper");
   let LoginBackButton = document.querySelector(".login-back-btn");
   let SearchButton = document.querySelector(".search-header-icon");
@@ -20,17 +20,22 @@ export const HandleSigninPopUp = () => {
     AuthWrapper.style.display = `none`;
   }
 
-  SignInButton.addEventListener("click", (e) =>
-    ShowAuthForm(e, HomeSignInWrapper)
-  );
+  SignInButtons.forEach((SignInButton) => {
+    SignInButton.addEventListener("click", (e) =>
+      ShowAuthForm(e, HomeSignInWrapper)
+    );
+  });
 
-  LoginOption.addEventListener("click", (e) =>
-    ShowAuthForm(e, HomeLogInWrapper)
-  );
+  LoginOptions.forEach((LoginOption) => {
+    LoginOption.addEventListener("click", (e) =>
+      ShowAuthForm(e, HomeLogInWrapper)
+    );
+  });
 
   LoginBackButton.addEventListener("click", (e) =>
     HideAuthForm(e, HomeLogInWrapper)
   );
+
   SearchButton.addEventListener("click", (e) =>
     ShowAuthForm(e, HomeSearchWrapper)
   );

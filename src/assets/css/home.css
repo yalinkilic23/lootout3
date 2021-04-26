@@ -5,15 +5,18 @@
 .home-sign-in-wrapper,
 .home-login-wrapper,
 .home-search-wrapper {
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   position: absolute;
   left: 0;
-  top: 0;
+  top: 15%;
   display: none;
+}
+.home-login-wrapper,
+.home-sign-in-wrapper {
+  z-index: 101;
 }
 .home-search-wrapper {
   padding-top: 8rem;
@@ -512,6 +515,10 @@
   }
   .home .mobile-mode-display {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .home .mobile-mode-display .image-wrapper {
+    border-radius: 999px;
+    background: #0e2d3d;
   }
   .footer-body {
     grid-template-columns: repeat(1, 1fr);
