@@ -141,16 +141,16 @@
   line-height: 28px;
   letter-spacing: 0.02em;
 }
-.home .popular-presentation,
-.home .most-recent-item-presentation,
-.home .brand-presentation {
+.popular-presentation,
+.most-recent-item-presentation,
+.brand-presentation {
   display: flex;
   align-items: center;
   margin-bottom: 6rem;
 }
-.home .popular-presentation h1,
-.home .most-recent-item-presentation h1,
-.home .brand-presentation h1 {
+.popular-presentation h1,
+.most-recent-item-presentation h1,
+.brand-presentation h1 {
   font-size: 37px;
   font-style: normal;
   font-weight: 800;
@@ -160,20 +160,19 @@
   text-align: left;
   color: #fff;
 }
-.home .popular-presentation p,
-.home .most-recent-item-presentation p,
-.home .brand-presentation p {
+.most-recent-item-presentation p,
+.brand-presentation p {
   font-size: 48px;
   color: #fff;
   margin-left: 1rem;
   font-family: "Roboto", sans-serif;
   font-weight: 200;
 }
-.home .popular-presentation img {
+.popular-presentation img {
   margin-left: 1rem;
   width: 350px;
 }
-.home .popular-brands-img {
+.popular-brands-img {
   width: 100%;
   margin-bottom: 6rem;
 }
@@ -183,32 +182,32 @@
   overflow-x: hidden;
   margin: 4rem 0rem;
 }
-.home .most-recent-item-presentation,
-.home .brand-presentation {
+.most-recent-item-presentation,
+.brand-presentation {
   margin-bottom: 3rem;
 }
-.home .most-recent-item-presentation .slider-arrow,
-.home .brand-presentation .slider-arrow {
+.most-recent-item-presentation .slider-arrow,
+.brand-presentation .slider-arrow {
   flex: 1;
 
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-.home .most-recent-item-presentation .slider-arrow > *,
-.home .brand-presentation .slider-arrow > * {
+.most-recent-item-presentation .slider-arrow > *,
+.brand-presentation .slider-arrow > * {
   cursor: pointer;
 }
-.home .most-recent-item-presentation .slider-arrow > * + *,
-.home .brand-presentation .slider-arrow > * + * {
+.most-recent-item-presentation .slider-arrow > * + *,
+.brand-presentation .slider-arrow > * + * {
   margin-left: 10px;
 }
-.home .home-card-reel {
+.home-card-reel {
   display: flex;
   flex-wrap: nowrap;
   /* transform: translateX(-230px); */
 }
-.home .MostRecentItem {
+.MostRecentItem {
   min-width: 300px;
   display: flex;
   flex-direction: column;
@@ -219,10 +218,10 @@
   background: #adadad66;
 }
 
-.home .MostRecentItem img {
+.MostRecentItem img {
   width: 100%;
 }
-.home .MostRecentItem p {
+.MostRecentItem p {
   align-self: flex-start;
   color: #fff;
   font-family: "Roboto", sans-serif;
@@ -231,11 +230,11 @@
   font-weight: 500;
   letter-spacing: 0.09em;
 }
-.home .MostRecentItem .item-name {
+.MostRecentItem .item-name {
   margin-top: 1rem;
   margin-bottom: 1.6rem;
 }
-.home .MostRecentItem .item-price {
+.MostRecentItem .item-price {
   align-self: flex-end;
   font-size: 19px;
 }
