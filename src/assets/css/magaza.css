@@ -1,0 +1,34 @@
+.Magaza {
+  width: 95%;
+  margin: auto;
+}
+.magaza-boxes {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 2rem;
+  margin: 2rem 0rem;
+}
+.magaza-boxes .MostRecentItem {
+  min-width: 100%;
+}
+@media screen and (max-width: 1100px) {
+  .magaza-boxes {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 800px) {
+  .magaza-boxes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 780px) {
+  .magaza-boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .magaza-boxes {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

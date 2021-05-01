@@ -103,6 +103,8 @@
 /* search */
 .search {
   width: 70%;
+  position: relative;
+  z-index: 30;
 }
 .search form {
   width: 100%;
@@ -273,6 +275,83 @@
 .sidebar-top .right-side > *:first-child {
   margin-right: 1.6rem;
 }
+
+.AddProductDonePopUp {
+  width: 600px;
+  min-height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transform: translateX(-50%);
+  padding: 3rem 3rem;
+  border-radius: 10px;
+  z-index: 30;
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%),
+    linear-gradient(0deg, #002a3f, #002a3f);
+  text-align: center;
+  color: #fff;
+  display: none;
+}
+.AddProductDonePopUp .image-wrapper:nth-child(1) {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.AddProductDonePopUp .image-wrapper:nth-child(1) img {
+  cursor: pointer;
+}
+.AddProductDonePopUp .image-wrapper:nth-child(2) img {
+  text-align: center;
+}
+.AddProductDonePopUp h2 {
+  font-family: "Poppins";
+  font-size: 24px;
+  font-style: normal;
+  width: 50%;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.AddProductDonePopUp p {
+  font-family: "Poppins";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 1rem;
+  width: 60%;
+}
+.AddProductDonePopUp .button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 1rem;
+}
+.AddProductDonePopUp .button-wrapper button {
+  background: linear-gradient(
+    178.18deg,
+    #8af2d6 -13.56%,
+    #89f0d6 -12.13%,
+    #281ac8 158.3%
+  );
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 10px;
+  height: 42px;
+  width: 134px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  font-weight: 400;
+  line-height: 15px;
+}
 @media screen and (max-width: 1100px) {
   .Sidebar {
     display: flex;
@@ -305,6 +384,15 @@
     margin-bottom: 10rem;
   }
 }
+@media screen and (max-width: 620px) {
+  .AddProductDonePopUp {
+    width: 95%;
+  }
+  .AddProductDonePopUp h2,
+  .AddProductDonePopUp p {
+    width: 80%;
+  }
+}
 @media screen and (max-width: 500px) {
   .search {
     width: 98%;
@@ -318,6 +406,22 @@
   }
   .header > img {
     width: 140px;
+  }
+  .AddProductDonePopUp {
+    padding: 5rem 1rem;
+  }
+  .AddProductDonePopUp .image-wrapper:nth-child(1) {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .AddProductDonePopUp h2,
+  .AddProductDonePopUp p {
+    width: 100%;
+  }
+  .AddProductDonePopUp .button-wrapper {
+    width: 100%;
+    margin-top: 3rem;
   }
 }
 @media screen and (max-width: 400px) {

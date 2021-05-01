@@ -161,7 +161,8 @@
   color: #fff;
 }
 .most-recent-item-presentation p,
-.brand-presentation p {
+.brand-presentation p,
+.popular-presentation p {
   font-size: 48px;
   color: #fff;
   margin-left: 1rem;

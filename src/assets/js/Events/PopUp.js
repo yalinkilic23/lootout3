@@ -10,11 +10,13 @@ export const HandleSigninPopUp = () => {
   let HomeSearchWrapper = document.querySelector(".home-search-wrapper");
 
   function ShowAuthForm(e, AuthWrapper) {
+    e.preventDefault();
     AppFrontWrapper.style.height = `${App.offsetHeight + 60}px`;
 
     AuthWrapper.style.display = `flex`;
   }
   function HideAuthForm(e, AuthWrapper) {
+    e.preventDefault();
     AppFrontWrapper.style.height = `${0}px`;
 
     AuthWrapper.style.display = `none`;
