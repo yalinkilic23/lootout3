@@ -28,6 +28,16 @@ import Services from '../components/home/Services'
 import Login from '../components/Auth/Login'
 import Search from '../../shared/Search'
 import Sidebar from '../../shared/Sidebar'
+import Slash from '../../assets/svg/slash.svg'
+import MostRecentDeskopSlash from '../../assets/svg/most-recent-desktop-slash.svg'
+import MostRecentMobileSlash from '../../assets/svg/most-recent-mobile-slash.svg'
+import PopularBrandDesltopSlash from '../../assets/svg/popuar-brands-desktop-slash.svg'
+import PopularBrandMobileSlash from '../../assets/svg/popular-brands-mobile-slash.svg'
+import AirJordanDesktopSlash from '../../assets/svg/air-jorder-desktop-slash.svg'
+import AirJordanMobileSlash from '../../assets/svg/air-jorder-desktop-slash.svg'
+import ServiceDesktopSlash from '../../assets/svg/services-desktop-slash.svg'
+import ServiceMobileSlash from '../../assets/svg/services-desktop-slash.svg'
+import BigTriangle from '../../assets/img/home-triangle-bg.png'
 function Home() {
 
     useEffect(() => {
@@ -49,6 +59,7 @@ function Home() {
             </div>
             <Header/>
             <div className="home-hero">
+                <img src={BigTriangle} alt=""/>
                 <div className="left">
                     <h1>HYPE <span>AND</span><br/>LIMITED</h1>
                     <p>Turkey's first sneaker stock market</p>
@@ -73,13 +84,18 @@ function Home() {
                 <img src={DownArrow} alt=""/>
             </div>
 
-            <PopularBrands/>
+            <PopularBrands PopularBrandDesltopSlash={PopularBrandDesltopSlash} PopularBrandMobileSlash={PopularBrandMobileSlash}/>
 
 
             <div className="most-recent-item-container">
                 <div className="most-recent-item-presentation">
-                    <h1>Most Searched Items</h1>
-                    <p>//////////</p>
+                    <h1>Most Searched Items
+                    
+                    <img src={MostRecentDeskopSlash} alt=""className="desktop-slash"/>
+                    <img src={MostRecentMobileSlash} alt="" className="mobile-slash"/>
+                    
+                    </h1>
+                    {/* <p>//////////</p> */}
                     <div className="slider-arrow" >
                         <img src={SliderLeftArrow} alt="" />
                         <img src={SliderRightArrow} alt="" />
@@ -96,8 +112,9 @@ function Home() {
 
             <div className="brand-item-container">
                 <div className="brand-presentation">
-                    <h1>Air Jordan 1</h1>
-                    <p>////////////////</p>
+                    <h1>Air Jordan 1<img src={AirJordanDesktopSlash} alt=""className="desktop-slash"/>
+                    <img src={MostRecentMobileSlash} alt="" className="mobile-slash"/></h1>
+                    
                     <div className="slider-arrow">
                         <img src={SliderLeftArrow} alt=""/>
                         <img src={SliderRightArrow} alt=""/>
@@ -113,12 +130,15 @@ function Home() {
             </div>
 
 
-            <Services/>
+            <Services ServiceDesktopSlash={ServiceDesktopSlash}/>
 
             <div className="sneaker-news-container">
             <div className="brand-presentation">
-                    <h1>Sneaker news</h1>
-                    <p>////////////////</p>
+                    <h1>Sneaker news 
+                        <img src={MostRecentDeskopSlash} alt="" className="desktop-slash"/>
+                        <img src={MostRecentMobileSlash} alt="" className="mobile-slash"/>
+                        </h1>
+                    
                     <div className="slider-arrow">
                         <img src={SliderLeftArrow} alt=""/>
                         <img src={SliderRightArrow} alt=""/>

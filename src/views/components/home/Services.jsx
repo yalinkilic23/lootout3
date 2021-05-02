@@ -11,7 +11,7 @@ import SellFastService from '../../../assets/svg/SellFastService.svg'
 import ServiceGraph from '../../../assets/svg/ServiceGraph.svg'
 import ServicePolicy from '../../../assets/svg/ServicePolicy.svg'
 import ServiceShipping from '../../../assets/svg/ServiceShipping.svg'
-function Services() {
+function Services({ServiceDesktopSlash}) {
     return (
         <div className="Services">
             
@@ -23,7 +23,7 @@ function Services() {
                 <div className="service-body-info">
                     <div className="service-body-info-left-side">
                         <button>Services</button>
-                        <p>//////////////////////////////</p>
+                       <img src={ServiceDesktopSlash} alt=""/>
                     </div>
                     
 
